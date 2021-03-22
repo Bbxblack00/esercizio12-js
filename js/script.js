@@ -49,6 +49,16 @@
 
 
 
+
+
+// -----------------------------------------------------------------------------
+
+
+
+
+
+
+
 // function openClick() {
 //
 //   $('.box').slideUp(2500);
@@ -63,6 +73,13 @@
 // }
 
 
+
+
+
+
+
+
+
 // WARNING: MEGLIO USARE IL METODO DI SOPRA
 // function init() {
 //
@@ -73,20 +90,49 @@
 // }
 
 
-function openClick() {
 
-  $('#box-left').slideToggle(2500, function() {
-    $('#box-right').slideToggle(2500, function() {
-      console.log('end animation');
-    });
-  });
 
+
+
+
+
+// function openClick() {
+//
+//   $('#box-left').slideToggle(2500, function() {
+//     $('#box-right').slideToggle(2500, function() {
+//       console.log('end animation');
+//     });
+//   });
+//
+// }
+//
+//
+// function init() {
+//
+//   $('#button').click(openClick);
+//
+// }
+//
+// $(document).ready(init);
+
+
+
+
+
+
+// ------------------------------------------------------------------------------
+
+
+
+
+function titleClick() {
+  console.log('Hello');
 }
 
 
 function init() {
 
-  $('#button').click(openClick);
+  $('.title').click(titleClick);
 
 }
 
