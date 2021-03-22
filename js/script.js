@@ -190,7 +190,7 @@ function nextClick() {
   // console.log(activeImg, nextImg);
   if (activeImg.hasClass('last')) {
 
-    var nextImg = $('img.firrst');
+    var nextImg = $('img.first');
 
     activeImg.removeClass('active');
     nextImg.addClass('active');
