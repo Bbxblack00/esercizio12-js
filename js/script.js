@@ -148,8 +148,17 @@
 
 
 function questionClick() {
+
+  // console.log($(this).html());
+  // console.log($(this).attr('text'));
   // console.log($(this).find('span').text());
+
+  
   $(this).find('span').slideToggle();
+
+
+  // $('#testImput').val('mio testo');
+  $('#testImput').attr('text', 'button');
 }
 
 function init() {
