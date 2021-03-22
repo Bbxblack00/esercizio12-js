@@ -49,16 +49,26 @@
 
 
 
-function openClick() {
+// function openClick() {
+//
+//   $('.box').slideUp(2500);
+//
+// }
+//
+//
+// function init() {
+//
+//   $('#button').click(openClick);
+//
+// }
 
-  $('.box').slideUp(2500);
 
-}
-
-
+// WARNING: MEGLIO USARE IL METODO DI SOPRA
 function init() {
 
-  $('#button').click(openClick);
+  $('#button').click(function() {
+    $('.box').slideUp(2500);
+  })
 
 }
 
