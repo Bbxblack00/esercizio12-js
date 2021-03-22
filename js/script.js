@@ -64,11 +64,29 @@
 
 
 // WARNING: MEGLIO USARE IL METODO DI SOPRA
+// function init() {
+//
+//   $('#button').click(function() {
+//     $('.box').slideUp(2500);
+//   })
+//
+// }
+
+
+function openClick() {
+
+  $('#box-left').slideToggle(2500, function() {
+    $('#box-right').slideToggle(2500, function() {
+      console.log('end animation');
+    });
+  });
+
+}
+
+
 function init() {
 
-  $('#button').click(function() {
-    $('.box').slideUp(2500);
-  })
+  $('#button').click(openClick);
 
 }
 
