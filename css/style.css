@@ -18,9 +18,9 @@
     background-color: greenyellow;
 }
 
-.color-red{
+/* .color-red{
   color: red;
-}
+} */
 
 /* .row {
   width: 100%;
@@ -41,3 +41,11 @@
   float: right;
   background-color: green;
 } */
+
+.row {
+  margin: 100px;
+}
+
+.hide {
+  display: none;
+}

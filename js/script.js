@@ -125,15 +125,38 @@
 
 
 
-function titleClick() {
-  console.log('Hello');
-}
+// function titleClick() {
 
+  // $('.title').slideToggle(2500);
+
+
+  // il this in questo caso fa riferimento all'elemento, tra tanti selezionati, quello su cui si scatena l'evento
+//   $(this).slideToggle(2500);
+//
+// }
+//
+//
+// function init() {
+//
+//   $('.title').click(titleClick);
+//
+// }
+
+
+
+
+
+
+function questionClick() {
+  // console.log($(this).find('span').text());
+  $(this).find('span').slideToggle();
+}
 
 function init() {
-
-  $('.title').click(titleClick);
-
+  $('li').click(questionClick);
 }
+
+
+
 
 $(document).ready(init);
