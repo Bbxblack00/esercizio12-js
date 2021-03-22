@@ -147,25 +147,76 @@
 
 
 
-function questionClick() {
+// function questionClick() {
 
   // console.log($(this).html());
   // console.log($(this).attr('text'));
   // console.log($(this).find('span').text());
 
-  
-  $(this).find('span').slideToggle();
+
+  // $(this).find('span').slideToggle();
 
 
   // $('#testImput').val('mio testo');
-  $('#testImput').attr('text', 'button');
+  // $('#testImput').attr('text', 'button');
 }
+//
+// function init() {
+//   $('li').click(questionClick);
+// }
+
+
+
+
+// $(document).ready(init);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function nextClick() {
+  var activeImg = $('.active');
+  var nextImg = activeImg.next('img');
+
+  // console.log(activeImg, nextImg);
+  if (activeImg.hasClass('last')) {
+
+    var nextImg = $('img.firrst');
+
+    activeImg.removeClass('active');
+    nextImg.addClass('active');
+
+
+  } else {
+
+    activeImg.removeClass('active');
+    nextImg.addClass('active');
+
+  }
+
+
+}
+
+
+function prevClick() {
+  console.log('prev');
+}
+
 
 function init() {
-  $('li').click(questionClick);
+
+  $('.next').click(nextClick);
+  $('.prev').click(nextClick);
+
 }
-
-
-
 
 $(document).ready(init);
